@@ -318,4 +318,8 @@ select::placeholder {
   padding: 8px 16px;
 }
 
+.test {
+  display: none;
+}
+
 /*# sourceMappingURL=public-universal-style.css.map */
