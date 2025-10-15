@@ -30,7 +30,7 @@ jobs:
         run: |
           # 示例：将 src/scss 目录下的所有 SCSS 编译到 dist/css
           # --style compressed 表示压缩输出，可改为 expanded（未压缩）
-          sass src/scss:dist/css --style compressed
+          sass public-universal-style.scss:dist/css --style compressed
 
       # 5. 提交编译后的 CSS 到仓库
       - name: 提交 CSS 文件
