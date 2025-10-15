@@ -57,7 +57,7 @@ table.mx-table > tbody > tr > td {
 //     }
 // }
 .btn, .btn-default {
-    &:not(.column-selector-button):not(.toggle-btn):not(.region-topbar button):not(#loginButton):not(.pagination-button):not([aria-label="Show date picker"]):not(.wizard-step-number):not(.mx-grid-pagingbar button) {
+    &:not(.column-selector-button):not(.toggle-btn):not(.region-topbar button):not(#loginButton):not(.pagination-button):not([aria-label="Show date picker"]):not(.wizard-step-number):not(.mx-grid-pagingbar button):not(.filter-selector-button) {
         height: 29px;
         padding: 0 10px;
         line-height: 28px;
@@ -72,6 +72,10 @@ table.mx-table > tbody > tr > td {
         border-color: #467DF0;
         background-color: #E7E7E7;
     }
+}
+.filter-selector-button {
+    height: 29px;
+    padding: 0 10px !important;
 }
 // .btn-primary {
 //     background-color: #1890ff;
@@ -203,11 +207,21 @@ $TableBorderColor: #EBEEF5;
 }
 // ===== dg2 =====
 .widget-datagrid {
+    .filter {
+        input,
+        .widget-dropdown-filter {
+            min-height: 29px !important;
+            max-height: 29px !important;
+            line-height: 27px !important;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
     .widget-datagrid-header {
-        padding: 6px 0;
+        padding-bottom: 8px;
     }
     .th:not(.widget-datagrid-col-select):not(.column-selector) {
-        min-width: 150px;
+        min-width: 120px;
     }
     .tr:nth-child(even) .td{
         background-color: #f7f8fa;
@@ -232,7 +246,7 @@ $TableBorderColor: #EBEEF5;
         .th {
             // background-color: transparent;
             background-color: #f7f8fa;
-            padding: 0px 6px 0px 10px;
+            padding: 0px 6px 0px 6px;
             min-height: 33px;
             border-color: $TableBorderColor;
             &.widget-datagrid-col-select { align-items: center; }
@@ -294,7 +308,7 @@ $TableBorderColor: #EBEEF5;
         padding: 6px 0 6px 16px;
     }
     >div {
-        input {
+        input:not([type="radio"]) {
             height: 32px;
             line-height: 32px;
             color: #606266;
@@ -333,5 +347,30 @@ select {
         &::placeholder {
             color: #ccc;
         }
+    }
+}
+// ===== treetable =====
+.widget-treetable-wrapper {
+    .ant-table-cell.buttonColumn {
+        button.mx-icon-lined {
+            line-height: unset;
+            height: 29px;
+            padding: 0 10px;
+            line-height: 28px;
+            font-size: 12px;
+            background-color: white;
+            border: 1px solid #e3e4e5;
+            color: #666;
+            margin-left: 8px;
+            &:hover,
+            &:focus {
+                color: #467DF0;
+                border-color: #467DF0;
+                background-color: #E7E7E7;
+            }
+        }
+    }
+    .ant-table-cell:not(.buttonColumn) {
+        padding: 8px 16px;
     }
 }
