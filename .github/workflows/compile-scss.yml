@@ -30,13 +30,13 @@ jobs:
         run: |
           # 示例：将 src/scss 目录下的所有 SCSS 编译到 dist/css
           # --style compressed 表示压缩输出，可改为 expanded（未压缩）
-          sass public-universal-style.scss:dist/css --style compressed
+          sass public-universal-style.scss:test/css --style compressed
 
       # 5. 提交编译后的 CSS 到仓库
       - name: 提交 CSS 文件
         run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-          git add dist/css  # 添加编译后的 CSS 目录
+          git config --global user.name "KingK"
+          git config --global user.email "13869478862@163.com"
+          git add test/css  # 添加编译后的 CSS 目录
           git commit -m "Auto-compile SCSS to CSS" || echo "No changes to commit"
           git push origin main
