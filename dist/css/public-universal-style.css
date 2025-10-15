@@ -43,7 +43,7 @@ table.mx-table > tbody > tr > td .form-group {
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1058823529);
 }
 
-.btn:not(.column-selector-button):not(.toggle-btn):not(.region-topbar button):not(#loginButton):not(.pagination-button):not([aria-label="Show date picker"]):not(.wizard-step-number):not(.mx-grid-pagingbar button), .btn-default:not(.column-selector-button):not(.toggle-btn):not(.region-topbar button):not(#loginButton):not(.pagination-button):not([aria-label="Show date picker"]):not(.wizard-step-number):not(.mx-grid-pagingbar button) {
+.btn:not(.column-selector-button):not(.toggle-btn):not(.region-topbar button):not(#loginButton):not(.pagination-button):not([aria-label="Show date picker"]):not(.wizard-step-number):not(.mx-grid-pagingbar button):not(.filter-selector-button), .btn-default:not(.column-selector-button):not(.toggle-btn):not(.region-topbar button):not(#loginButton):not(.pagination-button):not([aria-label="Show date picker"]):not(.wizard-step-number):not(.mx-grid-pagingbar button):not(.filter-selector-button) {
   height: 29px;
   padding: 0 10px;
   line-height: 28px;
@@ -59,6 +59,11 @@ table.mx-table > tbody > tr > td .form-group {
   color: #467DF0;
   border-color: #467DF0;
   background-color: #E7E7E7;
+}
+
+.filter-selector-button {
+  height: 29px;
+  padding: 0 10px !important;
 }
 
 .btn-primary {
@@ -151,11 +156,19 @@ button + button, a.mx-link + a.mx-link {
   background-color: transparent !important;
 }
 
+.widget-datagrid .filter input,
+.widget-datagrid .filter .widget-dropdown-filter {
+  min-height: 29px !important;
+  max-height: 29px !important;
+  line-height: 27px !important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .widget-datagrid .widget-datagrid-header {
-  padding: 6px 0;
+  padding-bottom: 8px;
 }
 .widget-datagrid .th:not(.widget-datagrid-col-select):not(.column-selector) {
-  min-width: 150px;
+  min-width: 120px;
 }
 .widget-datagrid .tr:nth-child(even) .td {
   background-color: #f7f8fa;
@@ -178,7 +191,7 @@ button + button, a.mx-link + a.mx-link {
 }
 .widget-datagrid .widget-datagrid-grid-head .th {
   background-color: #f7f8fa;
-  padding: 0px 6px 0px 10px;
+  padding: 0px 6px 0px 6px;
   min-height: 33px;
   border-color: #EBEEF5;
 }
@@ -239,7 +252,7 @@ button + button, a.mx-link + a.mx-link {
   text-align: right;
   padding: 6px 0 6px 16px;
 }
-.form-group > div input {
+.form-group > div input:not([type=radio]) {
   height: 32px;
   line-height: 32px;
   color: #606266;
@@ -283,6 +296,26 @@ select::placeholder {
 }
 .mx-textarea textarea::placeholder {
   color: #ccc;
+}
+
+.widget-treetable-wrapper .ant-table-cell.buttonColumn button.mx-icon-lined {
+  line-height: unset;
+  height: 29px;
+  padding: 0 10px;
+  line-height: 28px;
+  font-size: 12px;
+  background-color: white;
+  border: 1px solid #e3e4e5;
+  color: #666;
+  margin-left: 8px;
+}
+.widget-treetable-wrapper .ant-table-cell.buttonColumn button.mx-icon-lined:hover, .widget-treetable-wrapper .ant-table-cell.buttonColumn button.mx-icon-lined:focus {
+  color: #467DF0;
+  border-color: #467DF0;
+  background-color: #E7E7E7;
+}
+.widget-treetable-wrapper .ant-table-cell:not(.buttonColumn) {
+  padding: 8px 16px;
 }
 
 /*# sourceMappingURL=public-universal-style.css.map */
