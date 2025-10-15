@@ -156,14 +156,14 @@ button + button, a.mx-link + a.mx-link {
   background-color: transparent !important;
 }
 
-.widget-datagrid .filter input,
-.widget-datagrid .filter .widget-dropdown-filter {
+.filter input, .filter .widget-dropdown-filter {
   min-height: 29px !important;
   max-height: 29px !important;
   line-height: 27px !important;
   padding-top: 0;
   padding-bottom: 0;
 }
+
 .widget-datagrid .widget-datagrid-header {
   padding-bottom: 8px;
 }
