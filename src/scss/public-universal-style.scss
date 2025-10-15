@@ -206,17 +206,16 @@ $TableBorderColor: #EBEEF5;
     }
 }
 // ===== dg2 =====
-.widget-datagrid {
-    .filter {
-        input,
-        .widget-dropdown-filter {
-            min-height: 29px !important;
-            max-height: 29px !important;
-            line-height: 27px !important;
-            padding-top: 0;
-            padding-bottom: 0;
-        }
+.filter {
+    input, .widget-dropdown-filter {
+        min-height: 29px !important;
+        max-height: 29px !important;
+        line-height: 27px !important;
+        padding-top: 0;
+        padding-bottom: 0;
     }
+}
+.widget-datagrid {
     .widget-datagrid-header {
         padding-bottom: 8px;
     }
