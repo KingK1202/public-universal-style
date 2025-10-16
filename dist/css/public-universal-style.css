@@ -381,4 +381,146 @@ select::placeholder {
   padding: 5px 0 5px 24px;
 }
 
+.newedit-operation-top-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcdfe6;
+  padding: 6px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+}
+.newedit-operation-top-con > div:first-child {
+  display: flex;
+}
+.newedit-operation-top-con > div:first-child > a {
+  margin-right: 40px;
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.newedit-operation-top-con > div:first-child > a::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #DCDFE6;
+}
+.newedit-operation-top-con > div:first-child > h1.mx-title {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #303133;
+  font-weight: normal;
+}
+
+.newedit-operation-top-con-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dcdfe6;
+  padding: 6px 10px;
+  background-color: white;
+}
+.newedit-operation-top-con-2 > div:first-child {
+  display: flex;
+}
+.newedit-operation-top-con-2 > div:first-child > a {
+  margin-right: 40px;
+  position: relative;
+  color: black;
+  text-decoration: none;
+}
+.newedit-operation-top-con-2 > div:first-child > a::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 16px;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #DCDFE6;
+}
+.newedit-operation-top-con-2 > div:first-child > h1.mx-title {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #303133;
+  font-weight: normal;
+}
+
+.newedit-common-title-con {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ebeef5;
+}
+.newedit-common-title-con + .mx-table td .form-group {
+  margin-bottom: 18px !important;
+}
+.newedit-common-title-con + .mx-table td [class*=mx-name-container] {
+  margin-bottom: 18px !important;
+  display: flex;
+  align-items: center;
+}
+.newedit-common-title-con + .mx-table td [class*=mx-name-container] > span {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: right;
+  padding-right: 16px;
+  color: #606266;
+}
+
+.newedit-common-mxtable td .form-group {
+  margin-bottom: 18px !important;
+}
+.newedit-common-mxtable td [class*=mx-name-container] {
+  margin-bottom: 18px !important;
+  display: flex;
+  align-items: center;
+}
+.newedit-common-mxtable td [class*=mx-name-container] > span {
+  flex: 0 0 40%;
+  max-width: 40%;
+  text-align: right;
+  padding-right: 16px;
+  color: #606266;
+}
+
+.dg2-sticky-column-1 .table-content {
+  overflow-x: unset !important;
+}
+.dg2-sticky-column-1 .th:nth-child(1), .dg2-sticky-column-1 .th:nth-child(2), .dg2-sticky-column-1 .th:nth-child(3), .dg2-sticky-column-1 .th:nth-child(4), .dg2-sticky-column-1 .th:nth-child(5), .dg2-sticky-column-1 .th:nth-child(6), .dg2-sticky-column-1 .th:nth-last-child(1), .dg2-sticky-column-1 .th:nth-last-child(2), .dg2-sticky-column-1 .td:nth-child(1), .dg2-sticky-column-1 .td:nth-child(2), .dg2-sticky-column-1 .td:nth-child(3), .dg2-sticky-column-1 .td:nth-child(4), .dg2-sticky-column-1 .td:nth-child(5), .dg2-sticky-column-1 .td:nth-child(6), .dg2-sticky-column-1 .td:nth-last-child(1), .dg2-sticky-column-1 .td:nth-last-child(2) {
+  position: sticky;
+  z-index: 999 !important;
+  background-color: white;
+}
+.dg2-sticky-column-1 .th:nth-child(1), .dg2-sticky-column-1 .td:nth-child(1) {
+  left: 0;
+}
+.dg2-sticky-column-1 .th:nth-child(2), .dg2-sticky-column-1 .td:nth-child(2) {
+  left: 48px;
+}
+.dg2-sticky-column-1 .th:nth-child(3), .dg2-sticky-column-1 .td:nth-child(3) {
+  left: 198px;
+}
+.dg2-sticky-column-1 .th:nth-child(4), .dg2-sticky-column-1 .td:nth-child(4) {
+  left: 348px;
+}
+.dg2-sticky-column-1 .th:nth-child(5), .dg2-sticky-column-1 .td:nth-child(5) {
+  left: 498px;
+}
+.dg2-sticky-column-1 .th:nth-child(6), .dg2-sticky-column-1 .td:nth-child(6) {
+  left: 648px;
+}
+.dg2-sticky-column-1 .th:nth-last-child(1), .dg2-sticky-column-1 .td:nth-last-child(1) {
+  right: 0;
+}
+.dg2-sticky-column-1 .th:nth-last-child(2), .dg2-sticky-column-1 .td:nth-last-child(2) {
+  right: 54px;
+}
+
 /*# sourceMappingURL=public-universal-style.css.map */
