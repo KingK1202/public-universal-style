@@ -28,6 +28,10 @@ table.mx-table > tbody > tr > td .form-group {
   margin-bottom: 0;
 }
 
+.mx-scrollcontainer .mx-placeholder .mx-layoutgrid, .mx-scrollcontainer .mx-placeholder .mx-layoutgrid-fluid {
+  padding: 7px;
+  margin: 0;
+}
 .universal-con {
   padding: 24px;
   background-color: white;
@@ -156,14 +160,13 @@ button + button, a.mx-link + a.mx-link {
   background-color: transparent !important;
 }
 
-.filter input, .filter .widget-dropdown-filter {
+.widget-datagrid .filter input, .widget-datagrid .filter .widget-dropdown-filter {
   min-height: 29px !important;
   max-height: 29px !important;
   line-height: 27px !important;
   padding-top: 0;
   padding-bottom: 0;
 }
-
 .widget-datagrid .widget-datagrid-header {
   padding-bottom: 8px;
 }
@@ -316,10 +319,6 @@ select::placeholder {
 }
 .widget-treetable-wrapper .ant-table-cell:not(.buttonColumn) {
   padding: 8px 16px;
-}
-
-.test {
-  display: none;
 }
 
 /*# sourceMappingURL=public-universal-style.css.map */
