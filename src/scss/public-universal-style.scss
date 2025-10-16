@@ -23,6 +23,20 @@ table.mx-table > tbody > tr > td {
     padding: 0;
     .form-group { margin-bottom: 0; }
 }
+// ===== layoutGrid =====
+.mx-scrollcontainer .mx-placeholder .mx-layoutgrid, .mx-scrollcontainer .mx-placeholder .mx-layoutgrid-fluid {
+    padding: 7px;
+    margin: 0;
+    >.row {
+        // margin: 0;
+        >div {
+            // padding: 0;
+            >.mx-dataview {
+                // background-color: white;
+            }
+        }
+    }
+}
 // ----- home page ------
 .universal-con {
     padding: 24px;
@@ -206,16 +220,16 @@ $TableBorderColor: #EBEEF5;
     }
 }
 // ===== dg2 =====
-.filter {
-    input, .widget-dropdown-filter {
-        min-height: 29px !important;
-        max-height: 29px !important;
-        line-height: 27px !important;
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-}
 .widget-datagrid {
+    .filter {
+        input, .widget-dropdown-filter {
+            min-height: 29px !important;
+            max-height: 29px !important;
+            line-height: 27px !important;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
     .widget-datagrid-header {
         padding-bottom: 8px;
     }
@@ -372,7 +386,4 @@ select {
     .ant-table-cell:not(.buttonColumn) {
         padding: 8px 16px;
     }
-}
-.test {
-    display: none;
 }
