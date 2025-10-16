@@ -1,6 +1,11 @@
 @charset "UTF-8";
 body {
   background-color: #ebeef5;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+.region-content span:not(.mx-icon-lined) {
+  color: #606266;
 }
 
 .mx-listview > ul {
@@ -124,6 +129,9 @@ a.mx-link {
   color: #1890ff;
   font-size: 12px;
 }
+a .mx-icon-lined {
+  font-size: 16px;
+}
 
 button + button, a.mx-link + a.mx-link {
   margin-left: 8px;
@@ -166,6 +174,10 @@ button + button, a.mx-link + a.mx-link {
   line-height: 27px !important;
   padding-top: 0;
   padding-bottom: 0;
+}
+.widget-datagrid .widget-datagrid-content {
+  overflow-x: auto;
+  position: relative;
 }
 .widget-datagrid .widget-datagrid-header {
   padding-bottom: 8px;
@@ -267,6 +279,9 @@ button + button, a.mx-link + a.mx-link {
   height: 32px;
   padding: 5px 12px;
 }
+.form-group > div select {
+  padding: 0 30px 0 8px;
+}
 
 input:not(#usernameInput):not(#passwordInput):not([type=checkbox]):not([type=radio]):not(.srs-input),
 .srs-value-container,
@@ -319,6 +334,51 @@ select::placeholder {
 }
 .widget-treetable-wrapper .ant-table-cell:not(.buttonColumn) {
   padding: 8px 16px;
+}
+
+.modal-dialog .mx-scrollcontainer .mx-placeholder .mx-layoutgrid, .modal-dialog .mx-scrollcontainer .mx-placeholder .mx-layoutgrid-fluid {
+  padding: 16px;
+}
+
+.mx-scrollcontainer .mx-placeholder {
+  padding: 6px;
+}
+
+.page-title-con {
+  margin-bottom: 8px;
+}
+.page-title-con > [class*=mx-name-pageTitle],
+.page-title-con > span {
+  font-size: 14px;
+  margin-bottom: 0;
+  font-weight: normal;
+  padding-left: 16px;
+  position: relative;
+}
+.page-title-con > [class*=mx-name-pageTitle]::before,
+.page-title-con > span::before {
+  content: "";
+  width: 5px;
+  height: 14px;
+  background-color: #1890ff;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 7px);
+  border-radius: 3px;
+}
+
+.widget-tree-node span {
+  font-size: 14px;
+}
+.widget-tree-node .widget-tree-node-branch-header {
+  border-bottom: 1px solid #ebeef5;
+  padding: 5px 0;
+}
+.widget-tree-node .widget-tree-node-body {
+  padding-left: 0;
+}
+.widget-tree-node .widget-tree-node-body > ul > li > .widget-tree-node-branch-header {
+  padding: 5px 0 5px 24px;
 }
 
 /*# sourceMappingURL=public-universal-style.css.map */
